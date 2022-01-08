@@ -2,8 +2,9 @@ import turtle
 
 mimi = turtle.Turtle()
 mimi.speed(10)
+
 mimi.penup()
-mimi.goto((-300, 100))
+mimi.goto(-300, 100)
 mimi.pendown()
 
 # add colour
@@ -45,6 +46,7 @@ star()
 mimi.penup()
 
 
+
 #code for planet 
 mimi.goto(400, -200)
 mimi.pendown()
@@ -61,6 +63,14 @@ mimi.penup()
 mimi.goto(547, -242)
 mimi.pendown()
 mimi.circle(80, extent= 160)
+
+
+mimi.penup()
+mimi.goto(-450, 30)
+mimi.pendown()
+mimi.circle(49)
+
+
 
 
 
