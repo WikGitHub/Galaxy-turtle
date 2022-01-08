@@ -25,6 +25,7 @@ def star():
         mimi.left(216)
 
 #def constallation():
+
 star()
 mimi.setheading(90)
 mimi.forward(100)
@@ -44,8 +45,38 @@ star()
 mimi.penup()
 
 
-mimi.goto(-500, -500)
+#code for planet 
+mimi.goto(400, -200)
 mimi.pendown()
+mimi.circle(80)
+mimi.penup()
+
+mimi.left(95)
+mimi.forward(10)
+mimi.left(40)
+mimi.forward(10)
+mimi.left(40)
+mimi.forward(10)
+mimi.penup()
+mimi.goto(547, -242)
+mimi.pendown()
+mimi.circle(80, extent= 160)
+
+
+
+
+
+
+
+#mimi.goto(-500, -500)
+#mimi.pendown()
+
+
+
+
+
+
+
 
 
 
