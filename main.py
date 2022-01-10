@@ -120,6 +120,28 @@ mimi.begin_fill()
 mimi.circle(-43, extent=360)
 mimi.end_fill()
 
+#rocket
+screen = turtle.Screen()
+screen.tracer(0)
+screen.addshape("Vp3M.gif")   
+
+mimi = turtle.Turtle()
+mimi.speed(0)
+mimi.shape("Vp3M.gif")         
+
+mimi.penup()
+mimi.goto(-350, 0)
+
+while True :
+    for i in range(400):
+        screen.update()
+        mimi.forward(5)
+    else:
+        screen.update
+        mimi.backward(5)
+
+
+
 
 
 
