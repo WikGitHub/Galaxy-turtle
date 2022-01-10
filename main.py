@@ -132,13 +132,15 @@ mimi.shape("Vp3M.gif")
 mimi.penup()
 mimi.goto(-350, 0)
 
-while True :
-    for i in range(400):
+
+for i in range(50):
+    if i <40 :
         screen.update()
         mimi.forward(5)
     else:
         screen.update
         mimi.backward(5)
+        i+=1
 
 
 
