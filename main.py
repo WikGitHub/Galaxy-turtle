@@ -50,11 +50,14 @@ mimi.penup()
 
 
 #code for planet 
+
+mimi.fillcolor('purple')
+mimi.begin_fill()
 mimi.goto(400, -200)
 mimi.pendown()
 mimi.circle(80)
+mimi.end_fill()
 mimi.penup()
-
 mimi.left(95)
 mimi.forward(10)
 mimi.left(40)
@@ -63,12 +66,13 @@ mimi.left(40)
 mimi.forward(10)
 mimi.penup()
 mimi.goto(547, -242)
+mimi.color('yellow')
 mimi.pendown()
 mimi.circle(80, extent= 160)
+mimi.color('black')
 mimi.penup()
 
 #code for little stars
-
 mimi.goto(100, 100)
 mimi.pendown()
 star()
