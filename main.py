@@ -2,6 +2,7 @@ import turtle
 
 mimi = turtle.Turtle()
 mimi.speed(10)
+mimi.getscreen().bgcolor('black')
 
 mimi.penup()
 mimi.goto(-300, 100)
