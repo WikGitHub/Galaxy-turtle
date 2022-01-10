@@ -65,10 +65,16 @@ mimi.pendown()
 mimi.circle(80, extent= 160)
 
 
+#moon code
 mimi.penup()
 mimi.goto(-450, 30)
 mimi.pendown()
 mimi.circle(49)
+mimi.penup()
+mimi.goto(-350,-7)
+mimi.pendown() #inner curve
+mimi.circle(-34, extent=270)
+
 
 
 
@@ -80,15 +86,4 @@ mimi.circle(49)
 
 #mimi.goto(-500, -500)
 #mimi.pendown()
-
-
-
-
-
-
-
-
-
-
-
 turtle.done()
