@@ -16,6 +16,7 @@ def star():
         mimi.forward(10)
         mimi.left(216)
     mimi.end_fill()
+    mimi.color('black')
 
 #def constallation():
 star()
@@ -111,11 +112,12 @@ mimi.begin_fill()
 mimi.circle(49)
 mimi.end_fill()
 mimi.penup()
-mimi.goto(-350,-7)
+mimi.goto(-360,83)
+#mimi.color('white')
 mimi.pendown() #inner curve
 mimi.fillcolor('black')
 mimi.begin_fill()
-mimi.circle(-34, extent=360)
+mimi.circle(-43, extent=360)
 mimi.end_fill()
 
 
