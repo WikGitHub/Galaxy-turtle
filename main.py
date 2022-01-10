@@ -9,6 +9,7 @@ mimi.goto(-300, 100)
 mimi.pendown()
 
 def star():
+    mimi.color('yellow')
     mimi.fillcolor('yellow')
     mimi.begin_fill()
     for i in range(5):
@@ -114,7 +115,7 @@ mimi.goto(-350,-7)
 mimi.pendown() #inner curve
 mimi.fillcolor('black')
 mimi.begin_fill()
-mimi.circle(-34, extent=270)
+mimi.circle(-34, extent=360)
 mimi.end_fill()
 
 
