@@ -21,12 +21,14 @@ mimi.pendown()
 #constellation(mimi, 360)
 
 def star():
+    mimi.fillcolor('yellow')
+    mimi.begin_fill()
     for i in range(5):
         mimi.forward(10)
         mimi.left(216)
+    mimi.end_fill()
 
 #def constallation():
-
 star()
 mimi.setheading(90)
 mimi.forward(100)
@@ -63,6 +65,41 @@ mimi.penup()
 mimi.goto(547, -242)
 mimi.pendown()
 mimi.circle(80, extent= 160)
+mimi.penup()
+
+#code for little stars
+
+mimi.goto(100, 100)
+mimi.pendown()
+star()
+mimi.penup()
+mimi.goto(80, -300)
+mimi.pendown()
+star()
+mimi.penup()
+mimi.goto(-600, 400)
+mimi.pendown()
+star()
+mimi.penup()
+mimi.goto(-350, -210)
+mimi.pendown()
+star()
+mimi.penup()
+mimi.goto(200, 300)
+mimi.pendown()
+star()
+mimi.penup()
+mimi.goto(500, 200)
+mimi.pendown()
+star()
+mimi.penup()
+mimi.goto(430, -400)
+mimi.pendown()
+star()
+mimi.penup()
+mimi.goto(180, -400)
+mimi.pendown()
+star()
 
 
 #moon code
