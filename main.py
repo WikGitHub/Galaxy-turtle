@@ -106,17 +106,17 @@ star()
 mimi.penup()
 mimi.goto(-450, 30)
 mimi.pendown()
+mimi.fillcolor('white')
+mimi.begin_fill()
 mimi.circle(49)
+mimi.end_fill()
 mimi.penup()
 mimi.goto(-350,-7)
 mimi.pendown() #inner curve
+mimi.fillcolor('black')
+mimi.begin_fill()
 mimi.circle(-34, extent=270)
-
-
-
-
-
-
+mimi.end_fill()
 
 
 
