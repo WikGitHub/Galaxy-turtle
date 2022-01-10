@@ -7,19 +7,6 @@ mimi.penup()
 mimi.goto(-300, 100)
 mimi.pendown()
 
-# add colour
-#def constellation(turtle, size):
-#    if size <= 10:
-        #return
-    #else:
-        #turtle.begin_fill()
-        #for i in range(5):
-         #   turtle.forward(size)
-          #  constellation(turtle, size/3)
-           # turtle.left(216)
-        #turtle.end_fill()
-#constellation(mimi, 360)
-
 def star():
     mimi.fillcolor('yellow')
     mimi.begin_fill()
@@ -30,27 +17,34 @@ def star():
 
 #def constallation():
 star()
+mimi.color('white')
 mimi.setheading(90)
 mimi.forward(100)
+mimi.color('black')
 
 star()
+mimi.color('white')
 mimi.right(130)
 mimi.forward(64)
+mimi.color('black')
 
 star()
+mimi.color('white')
 mimi.left(90)
 mimi.forward(64)
+mimi.color('black')
 
 star()
+mimi.color('white')
 mimi.setheading(270)
 mimi.forward(100)
+mimi.color('black')
 star()
 mimi.penup()
 
 
 
 #code for planet 
-
 mimi.fillcolor('purple')
 mimi.begin_fill()
 mimi.goto(400, -200)
