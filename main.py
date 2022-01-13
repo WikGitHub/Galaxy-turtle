@@ -66,8 +66,21 @@ mimi.goto(549, -160)
 mimi.color('yellow')
 mimi.pendown()
 mimi.circle(80, extent= -141)
+
+a = 0  
+b = 0   
+while(True):  
+    mimi.forward(a)  
+    mimi.right(b)  
+    a+=1  
+    b+=3  
+    if b >= 10:  
+        break  
+
+mimi.penup()   
 mimi.color('black')
-mimi.penup()
+
+
 
 #code for little stars
 mimi.goto(100, 100)
@@ -141,10 +154,6 @@ for i in range(50):
         screen.update
         mimi.backward(5)
         i+=1
-
-
-
-
 
 
 #mimi.goto(-500, -500)
