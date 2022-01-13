@@ -66,7 +66,7 @@ mimi.goto(549, -160)
 mimi.color('yellow')
 mimi.pendown()
 mimi.circle(80, extent= -141)
-
+#code for design within the palent 
 a = 0  
 b = 0   
 while(True):  
@@ -76,7 +76,7 @@ while(True):
     b+=3  
     if b >= 10:  
         break  
-
+    
 mimi.penup()   
 mimi.color('black')
 
