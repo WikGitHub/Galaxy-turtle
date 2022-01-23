@@ -62,23 +62,19 @@ mimi.forward(10)
 mimi.left(40)
 mimi.forward(10)
 mimi.penup()
-mimi.goto(549, -160)
+mimi.goto(565, -145)
 mimi.color('yellow')
 mimi.pendown()
-mimi.circle(80, extent= -141)
-#code for design within the palent 
-a = 0  
-b = 0   
-while(True):  
-    mimi.forward(a)  
-    mimi.right(b)  
-    a+=1  
-    b+=3  
-    if b >= 10:  
-        break  
-    
-mimi.penup()   
-mimi.color('black')
+mimi.circle(140, extent= -100)
+mimi.right(290)
+mimi.forward(30)
+mimi.backward(20)
+mimi.penup()
+mimi.goto(565, -145)
+mimi.pendown()
+mimi.setheading(180)
+mimi.forward(26)
+mimi.penup()
 
 
 
