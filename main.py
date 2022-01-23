@@ -62,12 +62,21 @@ mimi.forward(10)
 mimi.left(40)
 mimi.forward(10)
 mimi.penup()
-mimi.goto(549, -160)
+mimi.goto(565, -145)
 mimi.color('yellow')
 mimi.pendown()
-mimi.circle(80, extent= -141)
-mimi.color('black')
+mimi.circle(140, extent= -100)
+mimi.right(290)
+mimi.forward(30)
+mimi.backward(20)
 mimi.penup()
+mimi.goto(565, -145)
+mimi.pendown()
+mimi.setheading(180)
+mimi.forward(26)
+mimi.penup()
+
+
 
 #code for little stars
 mimi.goto(100, 100)
@@ -141,10 +150,6 @@ for i in range(50):
         screen.update
         mimi.backward(5)
         i+=1
-
-
-
-
 
 
 #mimi.goto(-500, -500)
