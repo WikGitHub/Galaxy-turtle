@@ -67,6 +67,23 @@ def diamond(xval, yval):
         mimi.goto(xTo,yTo)
         mimi.penup()
 
+def moon(xval, yval):
+  mimi.penup()
+  mimi.goto(xval, yval)
+  mimi.pendown()
+  mimi.fillcolor('white')
+  mimi.begin_fill()
+  mimi.circle(49)
+  mimi.end_fill()
+  mimi.penup()
+  mimi.goto(xval+90,yval+53)
+
+  mimi.pendown() #inner curve
+  mimi.fillcolor('black')
+  mimi.begin_fill()
+  mimi.circle(-43, extent=360)
+  mimi.end_fill()
+
 #def constallation():
 star()
 mimi.pendown()
@@ -95,7 +112,7 @@ star()
 #end of constellation
 
 
-#code for planet 
+#planet 
 mimi.fillcolor('purple')
 mimi.begin_fill()
 mimi.goto(400, -200)
@@ -116,14 +133,12 @@ mimi.pendown()
 mimi.circle(80, extent= -141)
 mimi.penup()
 
-#code for little stars
-
+#little stars
 mimi.color("white")
 diamond(100, 100)
 
 mimi.pendown()
 diamond(80, -300)
-
 mimi.goto(-600, 400)
 mimi.color("yellow")
 star()
@@ -138,23 +153,8 @@ star()
 mimi.goto(180, -400)
 star()
 
-
-#moon code
-mimi.penup()
-mimi.goto(-450, 30)
-mimi.pendown()
-mimi.fillcolor('white')
-mimi.begin_fill()
-mimi.circle(49)
-mimi.end_fill()
-mimi.penup()
-mimi.goto(-360,83)
-
-mimi.pendown() #inner curve
-mimi.fillcolor('black')
-mimi.begin_fill()
-mimi.circle(-43, extent=360)
-mimi.end_fill()
+#crescent moon
+moon(450, 30)
 
 #rocket
 screen = turtle.Screen()
