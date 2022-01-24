@@ -73,10 +73,10 @@ def moon(xval, yval):
   mimi.pendown()
   mimi.fillcolor('white')
   mimi.begin_fill()
-  mimi.circle(49)
+  mimi.circle(-49)
   mimi.end_fill()
-  #mimi.penup()
-  mimi.goto(xval+90,yval+53)
+  mimi.penup()
+  mimi.goto(xval+20,yval+93)
   mimi.pendown() #inner curve
   mimi.fillcolor('black')
   mimi.begin_fill()
