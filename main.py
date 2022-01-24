@@ -75,13 +75,12 @@ def moon(xval, yval):
   mimi.begin_fill()
   mimi.circle(49)
   mimi.end_fill()
-  mimi.penup()
+  #mimi.penup()
   mimi.goto(xval+90,yval+53)
-
   mimi.pendown() #inner curve
   mimi.fillcolor('black')
   mimi.begin_fill()
-  mimi.circle(-43, extent=360)
+  mimi.circle(43, extent=360)
   mimi.end_fill()
 
 #def constallation():
@@ -127,10 +126,18 @@ mimi.forward(10)
 mimi.left(40)
 mimi.forward(10)
 mimi.penup()
-mimi.goto(549, -160)
+mimi.goto(565, -145)
 mimi.color('yellow')
 mimi.pendown()
-mimi.circle(80, extent= -141)
+mimi.circle(140, extent= -100)
+mimi.right(290)
+mimi.forward(30)
+mimi.backward(20)
+mimi.penup()
+mimi.goto(565, -145)
+mimi.pendown()
+mimi.setheading(180)
+mimi.forward(26)
 mimi.penup()
 
 #little stars
@@ -154,16 +161,16 @@ mimi.goto(180, -400)
 star()
 
 #crescent moon
-moon(450, 30)
+moon(-450, 30)
 
 #rocket
 screen = turtle.Screen()
 screen.tracer(0)
-#screen.addshape("Vp3M.gif")   
+screen.addshape("Vp3M.gif")   
 
 mimi = turtle.Turtle()
 mimi.speed(0)
-#mimi.shape("Vp3M.gif")         
+mimi.shape("Vp3M.gif")         
 
 mimi.penup()
 mimi.goto(-350, 0)
@@ -177,10 +184,6 @@ for i in range(50):
         screen.update
         mimi.backward(5)
         i+=1
-
-
-
-
 
 
 #mimi.goto(-500, -500)
