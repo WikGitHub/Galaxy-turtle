@@ -21,7 +21,7 @@ def star():
     mimi.penup()
 
 
-def shapes(xval, yval):
+def diamond(xval, yval):
     mimi.penup()
     #quadrant 1 (+,+)
     for i in range(0,11):
@@ -34,6 +34,7 @@ def shapes(xval, yval):
         mimi.goto(xTo,yTo)
         mimi.penup()
 
+    #quadrant 2 (+,-)
     for i in range(0,11):
         xFrom = 0 + xval
         yFrom = -((10-i) * 1.5) +yval
@@ -44,6 +45,7 @@ def shapes(xval, yval):
         mimi.goto(xTo,yTo)
         mimi.penup()
 
+    #quadrant 3 (-,-)
     for i in range(0,11):
         xFrom = -0 + xval
         yFrom =-((10-i) * 1.50) +yval
@@ -54,6 +56,7 @@ def shapes(xval, yval):
         mimi.goto(xTo,yTo)
         mimi.penup()
 
+    #quadrant 4 (-,+)
     for i in range(0,11):
         xFrom = - 0 + xval
         yFrom =  ((10-i) * 1.5) +yval
@@ -70,28 +73,24 @@ mimi.pendown()
 mimi.color('white')
 mimi.setheading(90)
 mimi.forward(100)
-mimi.color('black')
 
 star()
 mimi.pendown()
 mimi.color('white')
 mimi.right(130)
 mimi.forward(64)
-mimi.color('black')
 
 star()
 mimi.pendown()
 mimi.color('white')
 mimi.left(90)
 mimi.forward(64)
-mimi.color('black')
 
 star()
 mimi.pendown()
 mimi.color('white')
 mimi.setheading(270)
 mimi.forward(100)
-mimi.color('black')
 star()
 #end of constellation
 
@@ -115,16 +114,15 @@ mimi.goto(549, -160)
 mimi.color('yellow')
 mimi.pendown()
 mimi.circle(80, extent= -141)
-mimi.color('black')
 mimi.penup()
 
 #code for little stars
 
 mimi.color("white")
-shapes(100, 100)
+diamond(100, 100)
 
 mimi.pendown()
-shapes(80, -300)
+diamond(80, -300)
 
 mimi.goto(-600, 400)
 mimi.color("yellow")
@@ -151,7 +149,7 @@ mimi.circle(49)
 mimi.end_fill()
 mimi.penup()
 mimi.goto(-360,83)
-#mimi.color('white')
+
 mimi.pendown() #inner curve
 mimi.fillcolor('black')
 mimi.begin_fill()
