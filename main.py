@@ -9,6 +9,7 @@ mimi.goto(-300, 100)
 mimi.pendown()
 
 def star():
+    mimi.pendown()
     mimi.color('yellow')
     mimi.fillcolor('yellow')
     mimi.begin_fill()
@@ -17,37 +18,100 @@ def star():
         mimi.left(216)
     mimi.end_fill()
     mimi.color('black')
+    mimi.penup()
+
+
+def diamond(xval, yval):
+    mimi.penup()
+    #quadrant 1 (+,+)
+    for i in range(0,11):
+        xFrom = 0 + xval
+        yFrom =((10-i) * 1.50) +yval
+        xTo = (i * 1.50)+ xval
+        yTo = 0 +yval
+        mimi.goto(xFrom,yFrom)
+        mimi.pendown()
+        mimi.goto(xTo,yTo)
+        mimi.penup()
+
+    #quadrant 2 (+,-)
+    for i in range(0,11):
+        xFrom = 0 + xval
+        yFrom = -((10-i) * 1.5) +yval
+        xTo = (i * 1.5 )+ xval
+        yTo = -0 +yval
+        mimi.goto(xFrom,yFrom)
+        mimi.pendown()
+        mimi.goto(xTo,yTo)
+        mimi.penup()
+
+    #quadrant 3 (-,-)
+    for i in range(0,11):
+        xFrom = -0 + xval
+        yFrom =-((10-i) * 1.50) +yval
+        xTo = -(i * 1.50)+ xval
+        yTo = -0 +yval
+        mimi.goto(xFrom,yFrom)
+        mimi.pendown()
+        mimi.goto(xTo,yTo)
+        mimi.penup()
+
+    #quadrant 4 (-,+)
+    for i in range(0,11):
+        xFrom = - 0 + xval
+        yFrom =  ((10-i) * 1.5) +yval
+        xTo = - (i * 1.5 )+ xval
+        yTo =  0 +yval
+        mimi.goto(xFrom,yFrom)
+        mimi.pendown()
+        mimi.goto(xTo,yTo)
+        mimi.penup()
+
+def moon(xval, yval):
+  mimi.penup()
+  mimi.goto(xval, yval)
+  mimi.pendown()
+  mimi.fillcolor('white')
+  mimi.begin_fill()
+  mimi.circle(49)
+  mimi.end_fill()
+  #mimi.penup()
+  mimi.goto(xval+90,yval+53)
+  mimi.pendown() #inner curve
+  mimi.fillcolor('black')
+  mimi.begin_fill()
+  mimi.circle(43, extent=360)
+  mimi.end_fill()
 
 #def constallation():
 star()
+mimi.pendown()
 mimi.color('white')
 mimi.setheading(90)
 mimi.forward(100)
-mimi.color('black')
 
 star()
+mimi.pendown()
 mimi.color('white')
 mimi.right(130)
 mimi.forward(64)
-mimi.color('black')
 
 star()
+mimi.pendown()
 mimi.color('white')
 mimi.left(90)
 mimi.forward(64)
-mimi.color('black')
 
 star()
+mimi.pendown()
 mimi.color('white')
 mimi.setheading(270)
 mimi.forward(100)
-mimi.color('black')
 star()
-mimi.penup()
+#end of constellation
 
 
-
-#code for planet 
+#planet 
 mimi.fillcolor('purple')
 mimi.begin_fill()
 mimi.goto(400, -200)
@@ -76,58 +140,28 @@ mimi.setheading(180)
 mimi.forward(26)
 mimi.penup()
 
+#little stars
+mimi.color("white")
+diamond(100, 100)
 
-
-#code for little stars
-mimi.goto(100, 100)
 mimi.pendown()
-star()
-mimi.penup()
-mimi.goto(80, -300)
-mimi.pendown()
-star()
-mimi.penup()
+diamond(80, -300)
 mimi.goto(-600, 400)
-mimi.pendown()
+mimi.color("yellow")
 star()
-mimi.penup()
 mimi.goto(-350, -210)
-mimi.pendown()
 star()
-mimi.penup()
 mimi.goto(200, 300)
-mimi.pendown()
 star()
-mimi.penup()
 mimi.goto(500, 200)
-mimi.pendown()
 star()
-mimi.penup()
 mimi.goto(430, -400)
-mimi.pendown()
 star()
-mimi.penup()
 mimi.goto(180, -400)
-mimi.pendown()
 star()
 
-
-#moon code
-mimi.penup()
-mimi.goto(-450, 30)
-mimi.pendown()
-mimi.fillcolor('white')
-mimi.begin_fill()
-mimi.circle(49)
-mimi.end_fill()
-mimi.penup()
-mimi.goto(-360,83)
-#mimi.color('white')
-mimi.pendown() #inner curve
-mimi.fillcolor('black')
-mimi.begin_fill()
-mimi.circle(-43, extent=360)
-mimi.end_fill()
+#crescent moon
+moon(-450, 30)
 
 #rocket
 screen = turtle.Screen()
